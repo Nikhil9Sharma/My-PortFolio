@@ -6,16 +6,9 @@ import Link from 'next/link';
 // import link from 'next/Link';
 
 export default function Navbar() {
-    // const [CheckStatus, ChangeStatus] = useState("true");
-    // const toggleForm= (Check) => {
-    //     if (CheckStatus === "true") {
-    //         ChangeStatus("false");
-    //         console.log("Clicked and change  by to false");
-    //     }        else {
-    //         ChangeStatus("true");
-    //         console.log("Clicked and change by to true");
-    //     }
-    // }
+    const [ismenuOpen, setmenuOpen] = useState(false);
+    const togglemenu =() => { setmenuOpen(!ismenuOpen) };
+
 
     return (
         <>
@@ -27,15 +20,16 @@ export default function Navbar() {
                             <h2>Nikhil Sharma</h2>
                         </div>
                         <div className="navbar-content-container">
-                            <div className="change-toggle-status-button-container">
-                                <button className="three-line-bar-icon" > 3Line</button>
-                                <button className="cross-icon" >Cross</button>
-                            </div>
                             <div className="navbar-inner-content">
                                 <button className=""><Link href="/">Home</Link></button>
                                 <button className=""><Link href="/About">About</Link></button>
                                 <button className=""><Link href="/Projects">Projects</Link></button>
                                 <button className=""><Link href="/Contact">Contact</Link></button>
+                            </div>
+                            <div className="change-toggle-status-button-container">
+                                
+                                <button className="three-line-bar-icon" > 3Line</button>
+                                <button className="cross-icon" >Cross</button>
                             </div>
                         </div>
                     </nav>
