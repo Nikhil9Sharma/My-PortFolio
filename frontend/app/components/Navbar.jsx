@@ -1,13 +1,16 @@
 "use client";
 import "../SytleFiles/Navbar.css";
 import MyImage from 'next/image';
+import userImage from "../Assets/NewUserImage.png";
 import {useState } from "react";
 import Link from 'next/link';
 // import link from 'next/Link';
 
 export default function Navbar() {
-    const [ismenuOpen, setmenuOpen] = useState(false);
-    const togglemenu =() => { setmenuOpen(!ismenuOpen) };
+    const [ismenuOpen, setmenuOpen] = useState(true);
+    const togglemenu =() => { setmenuOpen(!ismenuOpen)
+        console.log("Menu status:", ismenuOpen);
+     };
 
 
     return (
@@ -16,7 +19,12 @@ export default function Navbar() {
                 <div className="navbar-container">
                     <nav className="navbar-inner-container">
                         <div className="navbar-logo-container">
-                            <img src="../Assets/NuserIcon.jpg" alt="Logo" />
+                            <MyImage
+                                src={userImage} // Pass the imported image object
+                                alt="Logo"
+                                width={50}     // 🟢 REQUIRED: Must set width
+                                height={50}    // 🟢 REQUIRED: Must set height
+                            />
                             <h2>Nikhil Sharma</h2>
                         </div>
                         <div className="navbar-content-container">
@@ -27,9 +35,15 @@ export default function Navbar() {
                                 <button className=""><Link href="/Contact">Contact</Link></button>
                             </div>
                             <div className="change-toggle-status-button-container">
-                                
-                                <button className="three-line-bar-icon" > 3Line</button>
-                                <button className="cross-icon" >Cross</button>
+                                {ismenuOpen ? (
+                                     <button className="three-line-bar-icon"
+                                        onClick={togglemenu}
+                                     > ☰</button>
+                                     ) : (
+                                     <button className="cross-icon" 
+                                            onClick={togglemenu}>✕</button>
+                                )}
+
                             </div>
                         </div>
                     </nav>
