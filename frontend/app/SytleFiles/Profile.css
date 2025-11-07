@@ -39,6 +39,11 @@
   margin: 0; /* ensure no unwanted spacing */
   padding: 0;
 }
+@media (max-width: 750px) {
+  .social-media-profile-area {
+   display: none; /* adjust left position for smaller screens */
+  }
+}
 
 .social-media-profile-area-container {
   display: flex;

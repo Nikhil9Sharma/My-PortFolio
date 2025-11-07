@@ -1,0 +1,149 @@
+.about-me-section-heading-area {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.about-me-section-heading-area:hover .underline {
+  width: 140px;
+}
+/* ========== ABOUT ME SECTION ========== */
+
+.aboutme-section-full-area {
+  width: 100%;
+  padding: 60px 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #f9f9f9;
+  color: #222;
+  box-sizing: border-box;
+}
+
+/* ====== Container Layout ====== */
+.aboutme-section-full-area-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ====== Left Section: Know About Me ====== */
+.know-about-me-container {
+  flex: 1;
+  min-width: 320px;
+}
+
+.know-about-me-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.know-about-me-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.know-about-me-container button {
+  padding: 10px 24px;
+  background-color: var(--button-bg);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.know-about-me-container button:hover {
+  background-color: var(--button-bg-hover);
+  transform: translateY(-2px);
+}
+
+/* ====== Right Section: My Skills ====== */
+.know-about-my-skill {
+  flex: 0.9;
+  min-width: 300px;
+}
+
+.know-about-my-skill h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.know-about-my-skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.know-about-my-skill ul li {
+  background-color: var(--light-grey);
+  color: var(--color-text);
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.know-about-my-skill ul li:hover {
+  background-color: var(--grey);
+  transform: translateY(-3px);
+}
+.bold-font-span{
+    font-size: 1.02rem;
+    font-weight: 660;
+}
+.change-color-span {
+    font-size: 1.02rem;
+    font-weight: 660;
+    color: rgb(63, 112, 187);
+}
+/* ====== RESPONSIVENESS ====== */
+
+@media (max-width: 992px) {
+  .aboutme-section-full-area-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .know-about-me-container,
+  .know-about-my-skill {
+    width: 100%;
+  }
+
+  .know-about-me-container h2,
+  .know-about-my-skill h2 {
+    text-align: center;
+  }
+
+  .know-about-my-skill ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutme-section-full-area {
+    padding: 40px 6%;
+  }
+
+  .know-about-me-container p {
+    font-size: 0.95rem;
+  }
+
+  .know-about-me-container button {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -31,7 +31,7 @@ export default function Navbar() {
 
             {/* --- Desktop Nav --- */}
             <div className="navbar-inner-content desktop-menu">
-              <button><Link href="#/">Home</Link></button>
+              <button><Link href="/">Home</Link></button>
                 <button><Link href="#/Projects">Projects</Link></button>
               <button><Link href="#/About">About</Link></button>
                 <button><Link href="#/Contact">Contact</Link></button>
@@ -59,7 +59,7 @@ export default function Navbar() {
           ✕
         </button>
         <div className="navbar-inner-content">
-          <Link href="#/" onClick={toggleMenu}>
+          <Link href="/" onClick={toggleMenu}>
             Home
           </Link>
           <Link href="#/Projects" onClick={toggleMenu}>

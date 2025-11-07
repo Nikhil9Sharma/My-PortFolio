@@ -30,7 +30,7 @@ export default function Projects() {
         <div className="project-heading-area">
           <h2 className="project-heading heading-sec__main">Projects</h2>
           <div className="underline"></div>
-          <p className="project-subheading">
+          <p className="sub-heading">
             Here you will find some of the personal and clients projects that I
             created, each containing its own case study.
           </p>
@@ -40,15 +40,23 @@ export default function Projects() {
           {projects.map((project) => (
             <div key = {project.id} className="project-card" >
               <div className="project-view-card-area">
-                <img src={project.imageUrl}
-                  alt={project.title} />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  height={490}
+                  width={640}
+                />
                 </div>
               <div className="project-detail-content">
                 <h2 className="project-title">{project.title}</h2>
                 <p className="project-tech">{project.tech}</p>
                 <p className="project-description">{project.description}</p>
-                  <div className=""><button className="">Case Study</button></div>
-                  <div className=""><button className="">Live View</button></div>
+
+                  <div className="">
+                    <button className="">Live View</button>
+                    <button className="">Case Study</button>
+                  </div>
+                  
               </div>
              </div>
           ))}

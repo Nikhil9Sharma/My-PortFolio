@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
-import About from "./components/About";
+
+import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
@@ -12,8 +13,10 @@ export default function Home() {
     <Navbar />
     <Profile/>
     <Projects/>
+    <AboutMe/>
+    <Contact/>
     {/* <Forms/> */}
-    <StudentForm/>
+    {/* <StudentForm/> */}
     </>
   );
 }

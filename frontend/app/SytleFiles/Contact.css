@@ -1,0 +1,125 @@
+/* ========== CONTACT SECTION ========== */
+
+section {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 60px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.contact-form-heading {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form-heading:hover {
+  transform: translateY(-4px);
+}
+
+.contact-form-heading h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ====== Form Elements ====== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.8px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fdfdfd;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0078ff;
+  background-color: #eef5ff;
+  box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
+}
+
+/* ====== Submit Button ====== */
+.contact-form button {
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005fcc;
+  transform: translateY(-2px);
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 992px) {
+  section {
+    padding: 50px 6%;
+  }
+
+  .contact-form-heading {
+    padding: 35px 28px;
+  }
+
+  .contact-form-heading h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 40px 5%;
+  }
+
+  .contact-form-heading {
+    padding: 30px 22px;
+  }
+
+  .contact-form-heading h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
