@@ -1,54 +1,78 @@
 "use client";
 import "../SytleFiles/Navbar.css";
-import MyImage from 'next/image';
+import Image from "next/image";
 import userImage from "../Assets/NewUserImage.png";
-import {useState } from "react";
-import Link from 'next/link';
-// import link from 'next/Link';
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
-    const [ismenuOpen, setmenuOpen] = useState(true);
-    const togglemenu =() => { setmenuOpen(!ismenuOpen)
-        console.log("Menu status:", ismenuOpen);
-     };
+  const [isMenuOpen, setMenuOpen] = useState(false); 
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+    console.log("Menu status:", !isMenuOpen);
+  };
 
+  return (
+    <>
+      <header className="navbar-container-area">
+        <div className="navbar-container">
+          <nav className="navbar-inner-container">
+            {/* --- Logo --- */}
+            <div className="navbar-logo-container">
+              <Image
+                src={userImage}
+                alt="Logo"
+                width={50}
+                height={50}
+                className="navbar-logo-img"
+              />
+              <h2>Nikhil Sharma</h2>
+            </div>
 
-    return (
-        <>
-            <header className="navbar-container-area">
-                <div className="navbar-container">
-                    <nav className="navbar-inner-container">
-                        <div className="navbar-logo-container">
-                            <MyImage
-                                src={userImage} // Pass the imported image object
-                                alt="Logo"
-                                width={50}     // 🟢 REQUIRED: Must set width
-                                height={50}    // 🟢 REQUIRED: Must set height
-                            />
-                            <h2>Nikhil Sharma</h2>
-                        </div>
-                        <div className="navbar-content-container">
-                            <div className="navbar-inner-content">
-                                <button className=""><Link href="/">Home</Link></button>
-                                <button className=""><Link href="/About">About</Link></button>
-                                <button className=""><Link href="/Projects">Projects</Link></button>
-                                <button className=""><Link href="/Contact">Contact</Link></button>
-                            </div>
-                            <div className="change-toggle-status-button-container">
-                                {ismenuOpen ? (
-                                     <button className="three-line-bar-icon"
-                                        onClick={togglemenu}
-                                     > ☰</button>
-                                     ) : (
-                                     <button className="cross-icon" 
-                                            onClick={togglemenu}>✕</button>
-                                )}
+            {/* --- Desktop Nav --- */}
+            <div className="navbar-inner-content desktop-menu">
+              <button><Link href="#/">Home</Link></button>
+                <button><Link href="#/Projects">Projects</Link></button>
+              <button><Link href="#/About">About</Link></button>
+                <button><Link href="#/Contact">Contact</Link></button>
+            </div>
 
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-        </>
-    );
+            {/* --- Mobile Toggle --- */}
+            <div className="change-toggle-status-button-container">
+              {isMenuOpen ? (
+                <button className="cross-icon" onClick={toggleMenu}>
+                  ✕
+                </button>
+              ) : (
+                <button className="three-line-bar-icon" onClick={toggleMenu}>
+                  ☰
+                </button>
+              )}
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      {/* 🟢 UPDATED: Mobile Menu Panel */}
+      <div className={`navbar-mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <button className="navbar-mobile-close" onClick={toggleMenu}>
+          ✕
+        </button>
+        <div className="navbar-inner-content">
+          <Link href="#/" onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link href="#/Projects" onClick={toggleMenu}>
+            Projects
+          </Link>
+          <Link href="#/About" onClick={toggleMenu}>
+            About
+          </Link>
+          <Link href="#/Contact" onClick={toggleMenu}>
+            Contact
+          </Link>
+        </div>
+      </div>
+    </>
+  );
 }
