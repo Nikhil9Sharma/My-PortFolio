@@ -1,16 +1,16 @@
 import Navbar from "./components/Navbar";
 
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Profile from "./components/Profile";
-import Footer from "./components/Footer";
+import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Profile from "./pages/Profile";
+import Footer from "./pages/Footer";
 
 // import BrowserRouter from "next/router";
 // import { Route } from "next";
 
-import Forms from "./components/Forms";
-import StudentForm from "./components/StudentForms";
+// import Forms from "./components/Forms";
+// import StudentForm from "./components/StudentForms";
 export default function Home() {
   return (
     <>
