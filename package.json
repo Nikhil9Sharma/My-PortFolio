@@ -1,0 +1,9 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "This is my First NextJS and i'm start learn next with yarn",
+  "main": "index.js",
+  "repository": "git@github.com:Nikhil9Sharma/My-PortFolio.git",
+  "author": "Nikhil Sharma <159870552+Nikhil9Sharma@users.noreply.github.com>",
+  "license": "MIT"
+}

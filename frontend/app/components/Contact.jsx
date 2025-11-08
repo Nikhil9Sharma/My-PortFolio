@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <section>
-                <div className="">
+                <div className="contact-main-area">
                     <div className="">
                         <div className="about-me-section-heading-area">
                             <h1 className="project-heading heading-sec__main">Contact Me</h1>

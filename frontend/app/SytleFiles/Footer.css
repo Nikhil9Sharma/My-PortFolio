@@ -1,0 +1,154 @@
+/* ========== FOOTER SECTION ========== */
+
+.footer-main-area {
+  width: 100%;
+  background-color: #1e1e1e; /* dark grey */
+  color: #f5f5f5;
+  padding: 60px 8% 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== Main Container ====== */
+.footer-main-area-big-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 40px;
+}
+
+/* ====== Left Section (About) ====== */
+.footer-content-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-content-container .Name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-content-container p {
+  font-size: 1rem;
+  color: #cfcfcf;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* ====== Right Section (Social Media) ====== */
+.footer-social-media-container {
+  flex: 0.6;
+  min-width: 250px;
+}
+
+.footer-social-media-container .heading-of-footer-social-media {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-social-media-container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.footer-social-media-container ul li {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #cfcfcf;
+}
+
+.footer-social-media-container ul li:hover {
+  color: #0078ff;
+  transform: translateY(-4px);
+}
+
+/* ====== Copyright Area ====== */
+.copy-write-claim-area {
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.copy-write-claim-area h3 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #b0b0b0;
+  letter-spacing: 0.5px;
+}
+
+/* ====== RESPONSIVENESS ====== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .footer-main-area {
+    padding: 50px 6% 20px;
+  }
+
+  .footer-main-area-big-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-social-media-container ul {
+    justify-content: center;
+  }
+
+  .footer-content-container p {
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer-main-area {
+    padding: 45px 5% 20px;
+  }
+
+  .footer-content-container .Name {
+    font-size: 1.5rem;
+  }
+
+  .footer-social-media-container .heading-of-footer-social-media {
+    font-size: 1.2rem;
+  }
+
+  .footer-social-media-container ul li {
+    font-size: 1.4rem;
+  }
+
+  .copy-write-claim-area h3 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .footer-main-area {
+    padding: 40px 5% 18px;
+  }
+
+  .footer-content-container p {
+    font-size: 0.9rem;
+  }
+
+  .footer-social-media-container ul {
+    gap: 16px;
+  }
+}
