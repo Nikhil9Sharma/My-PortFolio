@@ -14,7 +14,7 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 80px 8%;
-  background: url("../Assets/first-background.png");
+  background: url("../../public/Assets/first-background.png");
   background-size: cover;
   background-position: center;
   border-radius: 16px;

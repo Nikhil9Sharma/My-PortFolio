@@ -17,7 +17,7 @@
   box-sizing: border-box;
   overflow: hidden;
   transition: all 0.3s ease;
-  background-image: url("../Assets/first-background.png");
+  background-image: url("../../public//Assets/first-background.png");
   padding-left: 90px; /* 👈 adds space equal to sidebar width */
   position: relative; /* ensures absolute sidebar positions correctly */
 }

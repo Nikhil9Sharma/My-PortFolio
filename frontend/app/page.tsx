@@ -1,7 +1,7 @@
 "use client";
-import AboutMe from "./pages/AboutMe";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe/page";
+import Projects from "./pages/Projects/page";
+import Contact from "./pages/Contact/page";
 import Profile from "./pages/Profile";
 
 import { useState } from "react";
@@ -27,10 +27,12 @@ export default function Home() {
   };
   return (
     <>
-    <Profile/>
+    <div>
+      <Profile/>
     <Projects/>
     <AboutMe/>
     <Contact/>
+      {activePage}</div>
     </>
   );
 }

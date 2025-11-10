@@ -1,7 +1,7 @@
 "use client";
 import "../SytleFiles/Navbar.css";
 import Image from "next/image";
-import userImage from "../Assets/NewUserImage.png";
+import userImage from "../../public/Assets/NewUserImage.png";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -35,8 +35,8 @@ export default function Navbar() {
             <div className="navbar-inner-content desktop-menu">
               <button ><Link href="/">Home</Link></button>
                 <button><Link href="/Projects">Projects</Link></button>
-              <button><Link href="/#About">About</Link></button>
-                <button><Link href="#/Contact">Contact</Link></button>
+              <button><Link href="/About">About</Link></button>
+                <button><Link href="/Contact">Contact</Link></button>
             </div>
 
             {/* --- Mobile Toggle --- */}
@@ -64,13 +64,13 @@ export default function Navbar() {
           <Link href="/" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="#/Projects" onClick={toggleMenu}>
+          <Link href="/Projects" onClick={toggleMenu}>
             Projects
           </Link>
-          <Link href="#/About" onClick={toggleMenu}>
+          <Link href="/About" onClick={toggleMenu}>
             About
           </Link>
-          <Link href="#/Contact" onClick={toggleMenu}>
+          <Link href="/Contact" onClick={toggleMenu}>
             Contact
           </Link>
         </div>
