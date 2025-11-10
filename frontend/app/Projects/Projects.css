@@ -1,0 +1,210 @@
+/* --- Projects Section Container --- */
+.Project-section-full-area-container {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: var(--section-bg, #f9f9f9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Heading Area --- */
+.project-heading-area {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.project-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-primary, #222);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 90px;
+  height: 5px;
+  background: var(--button-bg, #007bff);
+  border-radius: 5px;
+  margin: 0 auto 20px auto;
+  transition: width 0.4s ease;
+}
+.project-heading-area:hover .underline {
+  width: 140px;
+}
+
+/* --- Subheading --- */
+.sub-heading {
+  max-width: 700px;
+  color: var(--text-secondary, #555);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+/* --- Project Cards Container --- */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* --- Individual Project Card --- */
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: transparent;
+  border-radius: 16px;
+  box-shadow: 0 4px 20/px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  padding: 20px;
+}
+
+
+/* --- Image Area --- */
+.project-view-card-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-view-card-area img,
+.project-view-card-area .project-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* --- Project Detail Content --- */
+.project-detail-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary, #222);
+}
+
+.project-tech {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--button-bg, #007bff);
+}
+
+.project-description {
+  color: var(--text-secondary, #444);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --- Buttons --- */
+.project-detail-content .project-buttons,
+.project-detail-content > div {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.project-detail-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg, #007bff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s  ease, transform 0.3s ease;
+}
+
+.project-detail-content button:hover {
+  background-color: #0056d6;
+  transform: translateY(-2px);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-view-card-area img {
+    max-width: 100%;
+  }
+
+  .project-detail-content {
+    align-items: center;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 2.2rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+
+  .project-list {
+    gap: 2rem;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-detail-content button {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Project-section-full-area-container {
+    padding: 50px 10px;
+  }
+
+  .project-heading {
+    font-size: 1.8rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-detail-content button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}

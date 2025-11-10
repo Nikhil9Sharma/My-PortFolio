@@ -5,6 +5,8 @@ import userImage from "../Assets/NewUserImage.png";
 import { useState } from "react";
 import Link from "next/link";
 
+// import Projects from "../pages/Projects";
+
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false); 
   const toggleMenu = () => {
@@ -31,9 +33,9 @@ export default function Navbar() {
 
             {/* --- Desktop Nav --- */}
             <div className="navbar-inner-content desktop-menu">
-              <button><Link href="/">Home</Link></button>
+              <button ><Link href="/">Home</Link></button>
                 <button><Link href="/Projects">Projects</Link></button>
-              <button><Link href="#/About">About</Link></button>
+              <button><Link href="/#About">About</Link></button>
                 <button><Link href="#/Contact">Contact</Link></button>
             </div>
 
