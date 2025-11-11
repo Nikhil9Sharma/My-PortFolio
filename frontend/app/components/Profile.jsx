@@ -13,10 +13,10 @@ export default function Profile() {
             <div className="main-profile-full-area">
                 <div className="social-media-profile-area">
                     <div className="social-media-profile-area-container">
-                        <button><FaLinkedin size={29}/></button>
-                        <button><FaXTwitter size={29}/></button>
-                        <button><FaGithub size={29}/></button>
-                        <button><FaDev size={29}/></button>
+                        <button><a href="https://www.linkedin.com/in/nikhilsharma906/"><FaLinkedin size={29}/></a></button>
+                        <button><a href="https://x.com/09NikhilSharma"><FaXTwitter size={29}/></a></button>
+                        <button><a href="https://github.com/Nikhil9Sharma/"><FaGithub size={29}/></a></button>
+                        <button><a href="https://dev.to/nikhilsharma906"><FaDev size={29}/></a></button>
                     </div>
                 </div>
                 <div className="my-profile-area">
