@@ -34,9 +34,9 @@ export default function Navbar() {
             {/* --- Desktop Nav --- */}
             <div className="navbar-inner-content desktop-menu">
               <button ><Link href="/">Home</Link></button>
-                <button><Link href="/Projects">Projects</Link></button>
-              <button><Link href="/About">About</Link></button>
-                <button><Link href="/Contact">Contact</Link></button>
+                <button><Link href="../pages/Projects">Projects</Link></button>
+              <button><Link href="../pages/AboutMe">About</Link></button>
+                <button><Link href="../pages/Contact">Contact</Link></button>
             </div>
 
             {/* --- Mobile Toggle --- */}
@@ -54,7 +54,9 @@ export default function Navbar() {
           </nav>
         </div>
       </header>
-
+        <header className="website-navbar-background-space">
+              <div></div>
+        </header>
       {/* 🟢 UPDATED: Mobile Menu Panel */}
       <div className={`navbar-mobile-menu ${isMenuOpen ? "open" : ""}`}>
         <button className="navbar-mobile-close" onClick={toggleMenu}>
@@ -64,13 +66,13 @@ export default function Navbar() {
           <Link href="/" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="/Projects" onClick={toggleMenu}>
+          <Link href="../pages/Projects" onClick={toggleMenu}>
             Projects
           </Link>
-          <Link href="/About" onClick={toggleMenu}>
+          <Link href="../pages/AboutMe" onClick={toggleMenu}>
             About
           </Link>
-          <Link href="/Contact" onClick={toggleMenu}>
+          <Link href="../pages/Contact" onClick={toggleMenu}>
             Contact
           </Link>
         </div>

@@ -1,8 +1,8 @@
 "use client";
 
-import "../SytleFiles/Projects.css";
+import "../../SytleFiles/Projects.css";
 import Image from "next/image";
-import projectImage from "../../../public/Assets/desktop.png";
+const projectImage = "/Assets/desktop.png";
 
 const projects = [
   {

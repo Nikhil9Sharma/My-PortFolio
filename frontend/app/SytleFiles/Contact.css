@@ -14,11 +14,10 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 80px 8%;
-  background: url("../../public/Assets/first-background.png");
-  background-size: cover;
-  background-position: center;
+  background: url("../../public/Assets/first-background.png") no-repeat center center;
+  /* background-size: cover;npm run dev */
   border-radius: 16px;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 /* ====== CONTACT FORM CONTAINER ====== */
