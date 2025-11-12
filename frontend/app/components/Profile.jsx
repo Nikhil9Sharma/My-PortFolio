@@ -28,7 +28,6 @@ export default function Profile() {
                         </div>
                         <div className="projects-button-area">
                             <button>Projects</button>
-                            <button>View My All Projects</button>
                         </div>
                     </div>
                 </div>
