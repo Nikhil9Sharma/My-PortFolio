@@ -38,7 +38,7 @@ export default function Contact() {
                             </form>
                         </div>
                     </div>
-                    <div><button>Hello</button></div>
+                    {/* <div><button>Hello</button></div> */}
             </section>
         </>
     );
