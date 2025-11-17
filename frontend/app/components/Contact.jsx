@@ -7,7 +7,7 @@ export default function Contact() {
         <>
             <section>
                 <div className="contact-main-area">
-                    <div className="">
+                    {/* <div className=""> */}
                         <div className="about-me-section-heading-area">
                             <h1 className="project-heading heading-sec__main">Contact Me</h1>
                             <div className="underline"></div>
@@ -38,7 +38,7 @@ export default function Contact() {
                             </form>
                         </div>
                     </div>
-                </div>
+                    <div><button>Hello</button></div>
             </section>
         </>
     );
