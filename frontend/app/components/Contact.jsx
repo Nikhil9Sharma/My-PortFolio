@@ -1,13 +1,12 @@
 "use client";
-import "../SytleFiles/Contact.css";
-import "../SytleFiles/Contact01.css";
+// import "../SytleFiles/Contact.css";
+// import "../SytleFiles/Contact01.css";
 
 export default function Contact() {
     return (
         <>
             <section>
                 <div className="contact-main-area">
-                    {/* <div className=""> */}
                         <div className="about-me-section-heading-area">
                             <h1 className="project-heading heading-sec__main">Contact Me</h1>
                             <div className="underline"></div>
@@ -37,8 +36,10 @@ export default function Contact() {
                                 <button type="submit">Send Message</button>
                             </form>
                         </div>
+                        <div>
+                            <button disabled="disabled"></button>
+                        </div>
                     </div>
-                    {/* <div><button>Hello</button></div> */}
             </section>
         </>
     );
