@@ -36,9 +36,6 @@ export default function Contact() {
                                 <button type="submit">Send Message</button>
                             </form>
                         </div>
-                        <div>
-                            <button disabled="disabled"></button>
-                        </div>
                     </div>
             </section>
         </>
