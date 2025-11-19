@@ -10,6 +10,7 @@
         return (
             <footer className="footer-main-area">
             <div className="footer-main-area-big-container">
+                <h3>About Me</h3>
                 <div className="footer-content-container">
                     <h3 className="Name">Nikhil Sharma.</h3>
                     <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
