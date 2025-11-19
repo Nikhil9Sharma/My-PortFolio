@@ -22,7 +22,7 @@ export default function Home() {
       case "contact":
         return <Contact />;
       default:
-        return <AboutMe />;
+        // return <AboutMe />;
     }
   };
   return (
@@ -32,7 +32,8 @@ export default function Home() {
     <Projects/>
     <AboutMe/>
     <Contact/>
-      {activePage}</div>
+      {/* {activePage} */}
+      </div>
     </>
   );
 }
