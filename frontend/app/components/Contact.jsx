@@ -1,6 +1,4 @@
 "use client";
-// import "../SytleFiles/Contact.css";
-// import "../SytleFiles/Contact01.css";
 
 export default function Contact() {
     return (
