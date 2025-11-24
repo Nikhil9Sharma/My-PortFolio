@@ -25,7 +25,6 @@ export default function Home() {
         // return <AboutMe />;
     }
   };
-  const [dust, setdust] =useState("dust");
   return (
     <>
     <div>
