@@ -72,9 +72,18 @@
 
 .social-media-profile-area-container button:hover {
   background: var(--button-light-bg);
-  /* color: var(--white-bg); */
   transform: scale(1.05);
-  /* box-shadow: 0 4px 15px var(--button-bg-hover); */
+}
+.social-media-profile-area-container button .social-icon {
+  background: var(--button-bg);
+  color: var(--white-bg);
+  transition: all 0.3s ease;
+}
+
+.social-media-profile-area-container button .social-icon:hover {
+  background: var(--button-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px #36454F;
 }
 
 /* 🟢 Main Profile Area */
@@ -188,4 +197,9 @@
   .projects-button-area button {
     width: 100%;
   }
+}
+.social-icon:hover {
+  background: var(--button-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px #36454F;
 }

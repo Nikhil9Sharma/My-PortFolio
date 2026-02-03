@@ -1,10 +1,10 @@
-"use Cient";
+"use client";
 
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaDev } from "react-icons/fa";
-
+import Link from "next/link";
 import "../SytleFiles/Profile.css";
 export default function Profile() {
     return (
@@ -13,10 +13,33 @@ export default function Profile() {
             <div className="main-profile-full-area">
                 <div className="social-media-profile-area">
                     <div className="social-media-profile-area-container">
-                        <button><FaLinkedin size={29}/></button>
-                        <button><FaXTwitter size={29}/></button>
-                        <button><FaGithub size={29}/></button>
-                        <button><FaDev size={29}/></button>
+                    <Link
+                        href="https://www.linkedin.com/in/nikhilsharma906/"
+                        target="_blank"
+                    >
+                        <FaLinkedin size={29} />
+                    </Link>
+
+                    <Link
+                        href="https://twitter.com/your_username"
+                        target="_blank"
+                    >
+                        <FaXTwitter size={29} />
+                    </Link>
+
+                    <Link
+                        href="https://github.com/Nikhil9Sharma"
+                        target="_blank"
+                    >
+                        <FaGithub size={29} />
+                    </Link>
+
+                    <Link
+                        href="https://dev.to/your_username"
+                        target="_blank"
+                    >
+                        <FaDev size={29} />
+                    </Link>
                     </div>
                 </div>
                 <div className="my-profile-area">

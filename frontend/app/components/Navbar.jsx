@@ -1,14 +1,14 @@
 "use client";
 import "../SytleFiles/Navbar.css";
 import Image from "next/image";
-import userImage from "../../public/Assets/NewUserImage.png";
+import userImage from "../../public/Assets/portLogo.jpg";
 import { useState } from "react";
 import Link from "next/link";
 
 // import Projects from "../pages/Projects";
 
 export default function Navbar() {
-  const [isMenuOpen, setMenuOpen] = useState(false); 
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
     console.log("Menu status:", !isMenuOpen);
@@ -35,10 +35,9 @@ export default function Navbar() {
             <div className="navbar-inner-content desktop-menu">
               <button ><Link href="/">Home</Link></button>
                 <button><Link href="../pages/Projects">Projects</Link></button>
-              <button><Link href="../pages/AboutMe">About</Link></button>
+              <button><Link href="../pages/AboutMe">About Me</Link></button>
                 <button><Link href="../pages/Contact">Contact</Link></button>
             </div>
-
             {/* --- Mobile Toggle --- */}
             <div className="change-toggle-status-button-container">
               {isMenuOpen ? (
